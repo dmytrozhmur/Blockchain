@@ -1,0 +1,57 @@
+# Project exclude paths
+/.gradle/
+/Blockchain/task/build/
+/Blockchain/task/out/
+/Blockchain/task/out/production/classes/
+/Topics/Abstract factory/Phone factory/out/
+/Topics/Abstract factory/Phone factory/out/production/classes/
+/Topics/Command/Forex Broker/out/
+/Topics/Command/Forex Broker/out/production/classes/
+/Topics/Command/Remote Controller/out/
+/Topics/Command/Remote Controller/out/production/classes/
+/Topics/Command/Stock Broker/out/
+/Topics/Command/Stock Broker/out/production/classes/
+/Topics/Executors/Check whether a number is prime/out/
+/Topics/Executors/Check whether a number is prime/out/production/classes/
+/Topics/Executors/Messaging/out/
+/Topics/Executors/Messaging/out/production/classes/
+/Topics/Input streams/Convert to bytes/out/
+/Topics/Input streams/Convert to bytes/out/production/classes/
+/Topics/Input streams/Reverse input text/out/
+/Topics/Input streams/Reverse input text/out/production/classes/
+/Topics/Lambda expressions/Apply function to all elements/out/
+/Topics/Lambda expressions/Apply function to all elements/out/production/classes/
+/Topics/Lambda expressions/Production of all numbers in the range/out/
+/Topics/Lambda expressions/Production of all numbers in the range/out/production/classes/
+/Topics/LocalDate/Print dates of a year with an offset/out/
+/Topics/LocalDate/Print dates of a year with an offset/out/production/classes/
+/Topics/LocalDate/The n-th day from the end of a month/out/
+/Topics/LocalDate/The n-th day from the end of a month/out/production/classes/
+/Topics/LocalDateTime/Add 11 hours and print the date/out/
+/Topics/LocalDateTime/Add 11 hours and print the date/out/production/classes/
+/Topics/LocalDateTime/Adding N minutes/out/
+/Topics/LocalDateTime/Adding N minutes/out/production/classes/
+/Topics/LocalDateTime/Merging date-time instances/out/
+/Topics/LocalDateTime/Merging date-time instances/out/production/classes/
+/Topics/LocalDateTime/The passed hours since the beginning of year/out/
+/Topics/LocalDateTime/The passed hours since the beginning of year/out/production/classes/
+/Topics/LocalDateTime/Whole hours between two date-time pairs/out/
+/Topics/LocalDateTime/Whole hours between two date-time pairs/out/production/classes/
+/Topics/LocalTime/Return time without seconds/out/
+/Topics/LocalTime/Return time without seconds/out/production/classes/
+/Topics/LocalTime/Seconds between two time points/out/
+/Topics/LocalTime/Seconds between two time points/out/production/classes/
+/Topics/LocalTime/Seconds since start of a day/out/
+/Topics/LocalTime/Seconds since start of a day/out/production/classes/
+/Topics/LocalTime/Some hours and minutes ago/out/
+/Topics/LocalTime/Some hours and minutes ago/out/production/classes/
+/Topics/Output streams/Convert to char array/out/
+/Topics/Output streams/Convert to char array/out/production/classes/
+/Topics/Parallel streams/Prime numbers/out/
+/Topics/Parallel streams/Prime numbers/out/production/classes/
+/Topics/Queue and Stack/Working with queue/out/
+/Topics/Queue and Stack/Working with queue/out/production/classes/
+/Topics/The Map interface/Creating a map/out/
+/Topics/The Map interface/Creating a map/out/production/classes/
+/Topics/The Set interface/Creating a set/out/
+/Topics/The Set interface/Creating a set/out/production/classes/
