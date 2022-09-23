@@ -4,29 +4,43 @@ import blockchain.management.BlockChain;
 import blockchain.management.BlockChainManager;
 import blockchain.management.Miner;
 
-import java.util.concurrent.Executor;
+import java.time.LocalTime;
+import java.time.Period;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
-import static blockchain.ConsoleHandler.getInputNumber;
+import static blockchain.ConsoleHandler.getMessage;
 
 public class Main {
+
     public static void main(String[] args) throws InterruptedException {
-//        BlockChain blockChain = new BlockChain();
-//        for (int i = 0; i < 5; i++) {
-//            blockChain.generateBlock();
-//        }
+        LocalTime before = LocalTime.now();
 
         BlockChain blockChain = BlockChainManager.getBlockChain();
-        ExecutorService executor = Executors.newFixedThreadPool(10);
+//        List<User> users = List.of(
+//                new User("Dmytro", blockChain), new User("Usup", blockChain));
+        List<MoneyHandler> moneyHandlers = new ArrayList<>();
 
-        executor.submit(BlockChainManager.getMiner(blockChain));
-
-        executor.shutdown();
-        while (!executor.isTerminated()) {
-            Thread.sleep(100);
+        for (int i = 0; i < Runtime.getRuntime().availableProcessors(); i++) {
+            moneyHandlers.add(new Miner(blockChain));
         }
-        blockChain.printBlocks(5);
+        blockChain.setMoneyHandlers(moneyHandlers);
+
+        moneyHandlers.forEach(Thread::start);
+//        users.get(0).run();
+
+        for (MoneyHandler handler : moneyHandlers) {
+            handler.join();
+        }
+
+        blockChain.printBlocks(15);
+        LocalTime after = LocalTime.now();
+
+        System.out.println("\n" + (after.toSecondOfDay() - before.toSecondOfDay()));
     }
 }
